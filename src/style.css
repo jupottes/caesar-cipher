@@ -1,0 +1,67 @@
+body{
+    background-image: url(pfundo.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+h1{
+    text-align:center;
+    color: #000;
+    font-size: 20pt;
+    font-variant-position: normal;
+    font-weight: bold;
+    margin-top: 80px;
+    font-family: monospace;
+    background-position-x: center;
+}
+#dados{
+    background-position-x: center;
+    margin: 0px 40px 0px 40px;
+    padding: 0px;
+    text-align:center;
+    border: 0px;
+    margin-top: 30px;
+}
+#campoMsg {
+    text-align:center;
+    border: 0px;
+    margin-top: 20px;
+  }
+#resposta{
+    border: 0px solid #000;
+    border-radius: 20px;
+    margin: 20px 400px 300px 400px;
+    padding: 35px;
+    background-color: rgba(121, 126, 125, 0.288);
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 200px;
+    background-position-x: center;
+}
+#msg1{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: italic;
+}
+#msg2{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: italic;
+}
+#botoes{
+    text-align: center;
+    cursor: pointer;
+
+}
+#resultCypher{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: bold;
+    color: blue;
+}
+#resultDcypher{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: inherit;
+    color: red;
+}
