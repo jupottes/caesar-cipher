@@ -1,3 +1,4 @@
+// teste git
 //Função para chamar dados do html
 function msgCifrar() {
   let codeCypher = document.getElementById("campoMsg").value;
