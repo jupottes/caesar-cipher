@@ -12,25 +12,23 @@
 
   <section id="dados">
     <label>Número de deslocamento:</label><br>
-    <input id="key" type="number" min="2" max="100">
-    <div>
+    <input id="key" type="number" min="2" max="100" value=3>
+    <div><br>
       <label>Escreva sua Mensagem:</label>
-      <br></div>
+      </div>
     <input id="campoMsg" type="textarea" maxlength="100" size="70" name="msgCifra">
     <div id="botoes"><br>
       <button id="encode-cypher" onclick="msgCifrar()">Cifrar</button>
       <button id="decode-cypher" onclick="msgDecifrar()">Decifrar</button>
       <br></div>
   </section>
-  <div id="resposta">
-    <p>
-      <p id="msg1">Mensagem Cifrada:</p>
-      <p id="resultCypher"></p>
-      <p id="msg2">Mensagem Decifrada:</p>
-      <p id="resultDcypher"></p>
-
-    </p>
-
+  <div id="resposta1">
+    <p id="msg1">Mensagem Cifrada:</p>
+    <p id="resultCypher"></p>
+  </div>
+  <div id="resposta2">
+    <p id="msg2">Mensagem Decifrada:</p>
+    <p id="resultDcypher"></p>
   </div>
 
   <script src="cipher.js"></script>

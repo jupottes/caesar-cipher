@@ -6,11 +6,12 @@ body{
 }
 h1{
     text-align:center;
-    color: rgb(28, 10, 104);
-    font-size: 20pt;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    font-size: 30pt;
     font-variant-position: normal;
     font-weight: bold;
-    margin-top: 80px;
+    margin-top: 70px;
     font-family: monospace;
     background-position-x: center;
 }
@@ -27,16 +28,29 @@ h1{
     border: 0px;
     margin-top: 20px;
   }
-#resposta{
+#resposta1{
     border: 0px solid #000;
     border-radius: 20px;
-    margin: 20px 400px 300px 400px;
-    padding: 35px;
+    padding: 10px 30px 10px 30px;
     background-color: rgba(121, 126, 125, 0.288);
-    padding: 10px 10px 10px 10px;
-    width: 500px;
-    height: 200px;
-    background-position-x: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+    margin: 20px 360px 20px 440px;
+}
+#resposta2{
+    border: 0px solid #000;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(121, 126, 125, 0.288);
+    margin-top: 10px;
+    margin-bottom: 200px;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+    margin: 20px 360px 50px 440px;
 }
 #msg1{
     font-family: cursive;
@@ -48,20 +62,24 @@ h1{
     font-size: 15px;
     font-style: italic;
 }
-#botoes{
+#encode-cypher{
     text-align: center;
     cursor: pointer;
-
+}
+#decode-cypher{
+    text-align: center;
+    cursor: pointer;
 }
 #resultCypher{
     font-family: cursive;
     font-size: 15px;
-    font-style: bold;
-    color: blue;
+    font-weight: bold;
+    color: rgb(6, 77, 36);
 }
 #resultDcypher{
     font-family: cursive;
     font-size: 15px;
     font-style: inherit;
-    color: red;
+    font-weight: bold;
+    color: rgb(6, 77, 36);
 }

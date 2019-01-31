@@ -43,15 +43,14 @@ function caesarDecipher (codeCypher, keyCypher) {
   let resultDecode = "", code;
   for (let i = 0; i < codeCypher.length; i++) {
     if (codeCypher.charCodeAt(i) >= 65 && codeCypher.charCodeAt(i) <= 90) {
-      code = (((codeCypher.charCodeAt(i) - 65) - keyCypher) % 26) + 65;
+      code = (((codeCypher.charCodeAt(i) - 65) - keyCypher %26) +26)%26 + 65;
     }
     else if (codeCypher.charCodeAt(i) >= 97 && codeCypher.charCodeAt(i) <= 122) {
-      code = (((codeCypher.charCodeAt(i) - 97) - keyCypher) % 26) + 97;
+      code = (((codeCypher.charCodeAt(i) - 97) - keyCypher %26) + 26) %26 + 97;
     }
     else if (codeCypher.charCodeAt(i) === 32) {
-      code = 32;[
-        
-      ]
+      code = 32;
+
     }
     resultDecode += String.fromCharCode(code);
   }
