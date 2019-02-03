@@ -15,6 +15,17 @@ h1{
     font-family: monospace;
     background-position-x: center;
 }
+#descricao{
+    text-align:center;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    font-variant-position: normal;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: monospace;
+    background-position-x: center;
+}
 #dados{
     background-position-x: center;
     margin: 0px 40px 0px 40px;

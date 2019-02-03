@@ -1,4 +1,3 @@
-//TESTE CIFRAR
 function test(codeCypher, keyCypher, encodeResult) {
     var result = caesarCypher(codeCypher, keyCypher);
     if (result === encodeResult) {
@@ -8,22 +7,21 @@ function test(codeCypher, keyCypher, encodeResult) {
     }
 }
 test("Ola bom dia", 1, "Pmb cpn ejb");
-test("Ola tudo bem", 3, "Rod wxgr ehp");
+test("Oi tudo bem", 3, "Rl wxgr ehp");
 test("Azeitona", 26, "Azeitona");
 test("Azeitona", 30, "Edimxsre");
 test("O dia Esta Nublado", 80, "Q fkc Guvc Pwdncfq");
 
-//TESTE DECIFRAR
-function test(codeCypher, keyCypher, encodeResult) {
-    var result = aesarDecipher (codeCypher, keyCypher);
-    if (result === encodeResult) {
-        console.log("correto!", codeCypher, "->", result, "===", encodeResult);
+function test2(codeCypher, keyCypher, decodeResult) {
+    var result2 = caesarDecipher (codeCypher, keyCypher);
+    if (result2 === decodeResult) {
+        console.log("correto!", codeCypher, "->", result2, "===", decodeResult);
     } else {
-        console.log("errado!", codeCypher, "->", result, "!==", encodeResult);
+        console.log("errado!", codeCypher, "->", result2, "!==", decodeResult);
     }
 }
-test("Ola tudo bem", 1, "Rod wxgr ehp");
-test("Ola bom dia", 1, "Pmb cpn ejb");
-test("Ola bom dia", 1, "Pmb cpn ejb");
-test("Ola bom dia", 1, "Pmb cpn ejb");
-test("Ola bom dia", 1, "Pmb cpn ejb");
+test("Pmb cpn ejb", 1, "Ola bom dia");
+test("Rl wxgr ehp", 3, "Oi tudo bem");
+test("Azeitona", 26, "Azeitona");
+test("Edimxsre", 30, "Azeitona");
+test("Q fkc Guvc Pwdncfq", 80, "O dia Esta Nublado");
